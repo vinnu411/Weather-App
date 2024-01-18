@@ -13,7 +13,7 @@ body{
     background-size: cover ;
 }
 .weather-app {
-    background-color: aliceblue;
+    background-color:#0004 ;
     max-width: 600px;
     margin: 50px auto;
     padding: 30px;
