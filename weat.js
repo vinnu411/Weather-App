@@ -1,6 +1,5 @@
 const apiKey = 'de257f4758e6559c993cd8d94bff956f';
-
-let descriptionIcon; 
+let descriptionIcon;
 
 async function fetchWeatherData(city) {
     const response = await fetch(
@@ -35,10 +34,11 @@ function updateWeatherUI(data) {
 
     const currentDate = new Date();
     date.textContent = currentDate.toDateString();
-    const weatherIconName = getWeatherIconName(data.weather[0].main);
-
-    descriptionIcon.innerHTML = `<i class="material-icons">${weatherIconName}</i>`;
-    console.log(descriptionIcon);
+    
+    const weatherCondition = data.weather[0].main;
+    descriptionIcon.innerHTML = `<i class="material-icons">${getWeatherIconName(weatherCondition)}</i>`;
+    
+    changeBackgroundImage(weatherCondition);
 }
 
 const formElement = document.querySelector(".search-form");
@@ -53,6 +53,25 @@ formElement.addEventListener('submit', function (e) {
         inputElement.value = "";
     }
 });
+
+function changeBackgroundImage(weatherCondition) {
+    const bodyElement = document.body;
+    const backgroundImages = {
+        Clear: "clear-sky.jpg",
+        Clouds: "cloudy.jpg",
+        Rain: "rainy.jpg",
+        Thunderstorm: "thunderstorm.jpg",
+        Drizzle: "rainy.jpg",
+        Snow: "snow.jpg",
+        Mist: "foggy.jpg",
+        Smoke: "foggy.jpg",
+        Haze: "foggy.jpg",
+        Fog: "foggy.jpg",
+    };
+
+    const defaultImage = "wea.jpg";
+    bodyElement.style.backgroundImage = `url(${backgroundImages[weatherCondition] || defaultImage})`;
+}
 
 function getWeatherIconName(weatherCondition) {
     const iconMap = {
