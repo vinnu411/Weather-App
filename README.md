@@ -3,7 +3,7 @@
 Its a weather app created by using HTML,CSS and Javascript.
 
 https://vinnu411.github.io/weather-app/
-visit the app.
+
 
 -Independently conceived and accomplished a weather forecast application using JavaScript, HTML and CSS, with a focus on user interactivity.
 
