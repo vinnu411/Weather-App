@@ -12,7 +12,7 @@ click here to checkout the website   👉 https://vinnu411.github.io/weather-app
 
 🌟Executed lively background changes, providing an intuitive visual representation of the current weather conditions.
 
--Incorporated visibility, wind speed and humidity indicators which offers users a comprehensive understanding of the weather forecast.
+🌟Incorporated visibility, wind speed and humidity indicators which offers users a comprehensive understanding of the weather forecast.
 
 -Managed the entire development life-cycle, including version control through Git and GitHub.
 
