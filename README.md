@@ -10,7 +10,7 @@ click here to checkout the website   👉 https://vinnu411.github.io/weather-app
 
 🌟Leveraged the Open-Weather API to provide real-time and accurate weather data for enhanced user experience.
 
--Executed lively background changes, providing an intuitive visual representation of the current weather conditions.
+🌟Executed lively background changes, providing an intuitive visual representation of the current weather conditions.
 
 -Incorporated visibility, wind speed and humidity indicators which offers users a comprehensive understanding of the weather forecast.
 
