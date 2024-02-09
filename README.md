@@ -17,3 +17,8 @@ click here to checkout the website   👉 https://vinnu411.github.io/weather-app
 🌟Managed the entire development life-cycle, including version control through Git and GitHub.
 
 🌟Demonstrated proficiency in both front-end development and API integration for real-time data updates.
+
+## How to Use
+
+1. Clone the repository.
+2. Open `index.html` in your web browser.
